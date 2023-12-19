@@ -9,8 +9,8 @@ namespace Laboration_2
             // Variabler för att lagra namn, åldrar och antalet familjemedlemmar.
             string[] names = null;
             int[] ages = null;
-            int numberOfFamilyMembers = 0;
-            int sumOfAge = 0;
+            double numberOfFamilyMembers = 0;
+            double sumOfAge = 0;
             
             //Huvudloop för programmet
             while (true)
@@ -41,8 +41,8 @@ namespace Laboration_2
                         //Användaren anger antalet familjemedlemmar och så ser vi till att skapa arrayer för namn och ålder.
                         Console.WriteLine("Enter the amount of familymembers: ");
                         numberOfFamilyMembers = int.Parse(Console.ReadLine());
-                        names = new string[numberOfFamilyMembers];
-                        ages = new int[numberOfFamilyMembers]; 
+                        names = new string[(int)numberOfFamilyMembers];
+                        ages = new int[(int)numberOfFamilyMembers]; 
 
                         // Mata in namn och ålder för varje medlem
                         for (int i = 0; i < numberOfFamilyMembers; i++)
